@@ -8,8 +8,10 @@ RUN apk --no-cache add curl && \
     curl -L https://github.com/micromdm/micromdm/releases/download/v${MICROMDM_VERSION}/micromdm_v${MICROMDM_VERSION}.zip -o /micromdm.zip && \
     unzip /micromdm.zip && \
     mv /build/linux/micromdm / && \
+    mv /build/linux/mdmctl / && \
     rm -r /build && \
     chmod a+x /micromdm && \
+    chmod a+x /mdmctl && \
     apk del curl && \
     mkdir /config /certs /repo && \
     chmod a+x /run.sh
