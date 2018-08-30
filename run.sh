@@ -1,6 +1,6 @@
 #!/bin/sh
 
-execServe="/micromdm serve -apns-cert ${APNS_PUSH_CERT} -apns-key ${APNS_PUSH_CERT_KEY} -apns-password='${APNS_PASSWORD}' -server-url='${SERVER_URL}' -filerepo /repo -config-path /config"
+execServe="/micromdm serve -apns-password='${APNS_PASSWORD}' -server-url='${SERVER_URL}' -filerepo /repo -config-path /config"
 
 # add api key if specified
 if [[ ${API_KEY} ]]; then
