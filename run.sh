@@ -15,6 +15,10 @@ else
   execServe="${execServe} -tls=false"
 fi
 
+if [[ ${HTTP} = false ]]; then
+  execServe="${execServe} -tls=false"
+fi
+
 if [[ ${DEBUG} ]]; then
   execServe="${execServe} -http-debug"
 fi
