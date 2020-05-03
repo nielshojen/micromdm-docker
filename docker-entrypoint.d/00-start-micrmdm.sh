@@ -5,7 +5,7 @@ echo "Waiting to make sure storage is up"
 sleep 30
 
 # Make sure we have the needed folders
-if [[ ${MICROMDM_CONFIG_DIR} ]]; then$
+if [[ ${MICROMDM_CONFIG_DIR} ]]; then
   mkdir -p ${MICROMDM_CONFIG_DIR}
 fi
 
